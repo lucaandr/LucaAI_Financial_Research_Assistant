@@ -1,0 +1,31 @@
+# UI
+streamlit
+
+# LLM & Frameworks
+langchain
+langchain-core
+langchain-community
+langchain-groq
+groq
+
+# Vector Store & Embeddings
+chromadb
+langchain-chroma
+langchain-huggingface
+sentence-transformers
+langchain-text-splitters
+
+# Web Scraping & APIs
+firecrawl-py
+yfinance
+ddgs
+
+# Data Processing
+pypdf
+pdfplumber
+pandas
+
+# Ops, Environment & Utils
+python-dotenv
+pydantic
+plotly.express

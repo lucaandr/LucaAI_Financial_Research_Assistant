@@ -1,0 +1,30 @@
+# Secrets — never bake these into the image; pass them at runtime instead
+# (docker run --env-file .env, or the env_file: entry in docker-compose.yml)
+.env
+api_key.txt
+
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Data & logs — these should live in mounted volumes, not in the image itself,
+# so they persist across container rebuilds/restarts instead of being baked
+# in (and immediately stale) or lost on every restart.
+data/raw_pdfs/
+data/chromadb/
+logs/
+research_report.md
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
